@@ -1,0 +1,10 @@
+About
+This project is Aung Bar Lay Lottery Checker integrating with Facebook Bot.
+It used Spring Boot.
+
+There are two entry points to handle RESTful Service.
+(1) FBResultController
+(2) ResultController
+
+FBResultController- it handles the RESTful request from Facebook.
+ResultController- it handles the RESTful request from Web client.
