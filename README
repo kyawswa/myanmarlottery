@@ -1,8 +1,13 @@
-#About
+# About
 This project is Aung Bar Lay Lottery Checker integrating with Facebook Bot.
-It used Spring Boot. It currently deployed in heroku and integrated with ထီတိုက္စို႔(https://web.facebook.com/aungbarlaylotterychecker) Facebook page.
+It currently deployed in heroku and integrated with ထီတိုက္စို႔(https://web.facebook.com/aungbarlaylotterychecker) Facebook page.
 
-#API URL
+# Technologies
+
+It used Spring Boot.
+And It also embedded fb-bot-boilarplate-java(https://github.com/hyurumi/fb-bot-boilarplate-java).
+
+# API URL
 https://myanmarlottery.herokuapp.com/result?type=2.
 
 There are two entry points to handle RESTful Service.
