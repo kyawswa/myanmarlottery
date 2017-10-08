@@ -7,6 +7,8 @@ It currently deployed in heroku and integrated with ထီတိုက္စိ�
 It used Spring Boot.
 And It also embedded fb-bot-boilarplate-java(https://github.com/hyurumi/fb-bot-boilarplate-java).
 
+The developer should have knowledge about Facebook Send API and Webhook API.(https://developers.facebook.com/docs/messenger-platform)
+
 # API URL
 https://myanmarlottery.herokuapp.com/result?type=2.
 
