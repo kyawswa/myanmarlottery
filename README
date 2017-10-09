@@ -26,3 +26,8 @@ FBResultController delegates the following parameters to FBResultService.
 - help or ?
 - @ က ဘ ၁၂၃၄၅၆ or @ က ၁၂၃၃၄၂,ခ ၂၁၂၁၂၁ or @ က ၁၂၃၄၅၆ ၁၂၃၄၅၉ (register lottery number to notify for winning number after lottery result is out)
 - excel file or csv file (for lottery result data and authorized senders can only send this file)
+
+csv and excel file structure
+
+lottery_type,noOfTime,resultDate,dataProvider,developer
+character,number,prize,numericType(not included in parsing process),prizeType
