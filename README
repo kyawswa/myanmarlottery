@@ -18,3 +18,11 @@ There are two entry points to handle RESTful Service.
 
 FBResultController- it handles the RESTful request from Facebook.
 ResultController- it handles the RESTful request from Web client.
+
+FBResultController delegates the following parameters to FBResultService.
+- က ၁၂၃၄၅၆,ခ ၂၁၂၃၁၂
+- က ည ၁၂၃၄၅၆
+- က ၁၂၃၄၅၆ ၁၂၃၄၅၉
+- help or ?
+- @ က ဘ ၁၂၃၄၅၆ or @ က ၁၂၃၃၄၂,ခ ၂၁၂၁၂၁ or @ က ၁၂၃၄၅၆ ၁၂၃၄၅၉ (register lottery number to notify for winning number after lottery result is out)
+- excel file or csv file (for lottery result data and authorized senders can only send this file)
