@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.hyurumi.fb_bot_boilerplate;
 
 import com.google.gson.Gson;
@@ -13,6 +18,11 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+/**
+ *
+ * @author Kyawswa
+ */
 public class FBMessageSender {
     
     private Gson gson;
