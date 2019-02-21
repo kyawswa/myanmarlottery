@@ -28,7 +28,7 @@ target/
 *.so
 
 # Properties
-/src/main/resources/application.properties
+src/main/resources/application.properties
 
 # Packages #
 ############
