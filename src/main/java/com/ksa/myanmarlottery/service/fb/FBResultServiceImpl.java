@@ -142,7 +142,6 @@ public class FBResultServiceImpl implements FBResultService {
                             }
                         }
                     } else if(messaging.message.attachments != null || !messaging.message.attachments.isEmpty()) {
-//                        if(senderId.equals(env.getProperty("sender.id"))) {
                         if(isAuthorizedSender(senderId)) {
                             Attachment attachment = messaging.message.attachments.get(0);
                             log.info("manageUpLoad... "+ senderId);
