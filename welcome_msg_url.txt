@@ -1,0 +1,11 @@
+﻿POST https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAC6CoQsmOQBAJH13ZAFGfFnKGZBOR1UxsorAoonpE7qqQNtBnXrQnT4B3sMbtQV7Tvu9xTNdDEAq1TK1ot0MNz6R1D9UevS0xpoVJ70937l0YNfDz7hZAldHZBFnPQGaklxRiq4PKkrs7SwQQMoc4CIlQLoZC39cjBcouuZC9ogZDZD
+
+
+
+Body
+{
+  "setting_type":"greeting",
+  "greeting":{
+    "text":"ထီတိုက္စို႔မွ ၾကိဳဆိုပါတယ္ ခင္ဗ်ာ။ \nထီေပါက္စဥ္ အစ အဆံုးကို တိုက္ၾကည္႔နိင္ပါျပီ။ အသံုးျပဳပံု အေသးစိတ္သိလိုလွ်င္  help (သို႔) ? စာသားကို ကို ရိုက္ပို႔လိုက္ပါ။ \nDeveloper By kyawswa.aung.7(April Technologies Group)"
+  }
+}
