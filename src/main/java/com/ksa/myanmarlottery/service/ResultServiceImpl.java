@@ -66,7 +66,6 @@ public class ResultServiceImpl implements ResultService {
         repositoy.deleteByType(type);
     }
     
-    // slice the number of length to find the small prize such as 50 thousand.
     private List<Integer> getPointList(String point) {
         List<Integer> points = new ArrayList<>();
         points.add(Integer.parseInt(point.substring(0, point.length()-1)));
@@ -78,12 +77,7 @@ public class ResultServiceImpl implements ResultService {
         return points;
     }
     
-    /**
-     * Find result by normal query type. eg (ka 123456,nya 123434)
-     * @param type lottery type
-     * @param codeNoArr [ka-123456,nya-123123]
-     * @return 
-     */
+    
     @Override
     public List<GetPrizeDTO> findPrizeByResultType(int type, String... codeNoArr) {
         log.info("findPrizeByLatestResult..");
@@ -95,19 +89,9 @@ public class ResultServiceImpl implements ResultService {
         return convertDTO(repositoy.findPrizeByResultType(codePoints, type));
     }
     
-    /**
-     * Find Result by character range.
-     * 
-     * @param startCode start character
-     * @param endCode end character
-     * @param point number
-     * @param type
-     * @return 
-     */
     @Override
     public List<GetPrizeDTO> findPrizesByCode(String startCode, String endCode, String point, int type) {
         log.info("findPrizesByCode..");
-        // get character from myanmar character map.
         String sIndex = charMap.get(startCode);
         String eIndex = charMap.get(endCode);
         if(sIndex == null || eIndex == null) {
@@ -121,18 +105,9 @@ public class ResultServiceImpl implements ResultService {
         return convertDTO(repositoy.findPrizeByCode(startIndex, endIndex, getPointList(point), type));
     }
     
-    /**
-     * Find by number range with same character.
-     * @param code - a character e.g ka
-     * @param startPoint start number eg. 123456
-     * @param endPoint end number eg. 123458
-     * @param type lottery type eg. 1(deprecated) or 2
-     * @return 
-     */
     @Override
     public List<GetPrizeDTO> findPrizesByPoints(String code, String startPoint, String endPoint, int type) {
         log.info("findPrizesByPoints..");
-        // get character from myanmar character map.
         String codeIndex = charMap.get(code);
         if(codeIndex == null) {
             return new ArrayList<>();
@@ -141,13 +116,12 @@ public class ResultServiceImpl implements ResultService {
         int ePoint = Integer.parseInt(endPoint);
         if(sPoint > ePoint)
             return new ArrayList<>();
-        // slice the number of length to find the small prize such as 50 thousand. eg. 123456
-        int startFivePoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-1)); // 12345
-        int startFourPoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-2)); // 1234
-        int startThreePoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-3)); // 123
-        int startTwoPoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-4)); // 12
         
-        // slice from end number range.
+        int startFivePoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-1));
+        int startFourPoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-2));
+        int startThreePoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-3));
+        int startTwoPoints = Integer.parseInt(startPoint.substring(0, startPoint.length()-4));
+                
         int endFivePoints = Integer.parseInt(endPoint.substring(0, endPoint.length()-1));
         int endFourPoints = Integer.parseInt(endPoint.substring(0, endPoint.length()-2));
         int endThreePoints = Integer.parseInt(endPoint.substring(0, endPoint.length()-3));
@@ -156,7 +130,6 @@ public class ResultServiceImpl implements ResultService {
         return convertDTO(repositoy.findPrizeByPoints(Integer.parseInt(codeIndex), sPoint, ePoint, startFivePoints, endFivePoints, startFourPoints, endFourPoints, startThreePoints, endThreePoints, startTwoPoints, endTwoPoints, type));
     }
     
-    // convert dto to export json string.
     private List<GetPrizeDTO> convertDTO(List<Prize> prizes) {
         List<GetPrizeDTO> list = new ArrayList<>();
         for(Prize p : prizes) {
