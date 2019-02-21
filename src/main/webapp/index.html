@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Myanmar Lottery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">Lottery Result Info</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-md-2 control-label">
+                    <label>Number Of Times</label>
+                    <input type="text" class="form-control" required id="noOfTimes"/>
+                </div>
+
+                <div class="col-md-2 control-label">
+                    <label>Result For</label>
+                    <input type="text" id="resultFor" class="form-control" placeholder="yyyy-MM-dd"/>
+                </div>
+
+                <div class="col-md-2 control-label">
+                    <label>Type</label>
+                    <input type="number" id="type" class="form-control"/>
+                </div>
+                
+                <div class="col-md-2 control-label">
+                    <label>Pass Code</label>
+                    <input type="password" id="passCode" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Prize သိန္း 1500</div>
+        <div class="panel-body">
+            <div class="form-group prize1">
+                <div class="col-md-2 control-label">
+                    <input type="text" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Prize သိန္း 1000</div>
+        <div class="panel-body">
+            <div class="form-group prize2">
+                <div class="col-md-2 control-label">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2 control-label">
+                    <input type="text" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Prize သိန္း 500</div>
+        <div class="panel-body">
+            <div class="form-group prize3">
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Prize သိန္း 300</div>
+        <div class="panel-body">
+            <div class="form-group prize4">
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Prize သိန္း 200</div>
+        <div class="panel-body">
+            <div class="form-group prize5">
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize သိန္း 100</label></div>
+        <div class="panel-body">
+            <div class="form-group prize6">
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control"/>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize သိန္း 50</label></div>
+        <div class="panel-body">
+            <div class="form-group prize7">
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize သိန္း 25</label></div>
+        <div class="panel-body">
+            <div class="form-group prize8">
+                <div class="col-md-2">
+
+        
+        <input type="text" class="form-control"/>
+                </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+        </div>
+    </div>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize 10 သိန္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize9">
+                <div class="col-md-2">
+
+        
+        <input type="text" />
+                </div>
+        
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control" /></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/>
+    </div>
+            </div>
+        </div>
+        </div>
+            
+    <div class="panel panel-default">
+        <div class="panel-heading"><<label>Prize 5 သိန္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize10">
+                <div class="col-md-2">
+
+        
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control" /></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+        <input type="text" class="form-control"/></div>
+        <div class="col-md-2">
+            <input type="text" class="form-control"/></div>
+    </div>
+        </div>
+    </div>
+
+    <div>
+        <label>ေဝေဝဆာဆာပေဒသာ</label>
+        <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize 3 သိန္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize11">
+                <div class="col-md-2">
+
+            <input type="text" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+            <input type="text" class="form-control"/>
+            </div>
+                <div class="col-md-2">
+            <input type="text" class="form-control"/>
+                </div>
+                <div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+                <input type="text" class="form-control"/></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize 2 သိန္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize12">
+                <div class="col-md-2">
+
+            
+            <input type="text" class="form-control"/></div>
+            <div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+                <input type="text" class="form-control"/></div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize 1 သိန္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize13">
+                <div class="col-md-2">
+
+            
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+                <input type="text" class="form-control"/></div>
+        </div>
+        </div>
+        </div>
+
+        <div class="panel panel-default">
+        <div class="panel-heading"><label>Prize 5 ေသာင္း</label></div>
+        <div class="panel-body">
+            <div class="form-group prize14">
+                <div class="col-md-2">
+
+            
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+            <input type="text" class="form-control"/></div><div class="col-md-2">
+                <input type="text" class="form-control"/></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <input id="submitBtn" type="button" class="btn btn-primary btn-lg" value="Submit">
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app/result.js"></script>
+</body>
+</html>
